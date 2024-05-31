@@ -1,0 +1,102 @@
+@import url('index.css');
+
+.wrap-beforeStart {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.wrap-header {
+  width: calc(100% - 40px);
+  padding: 10px 20px 10px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px #f0f1f2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrap-logo {
+  margin-right: 10px;
+}
+
+.wrap-header Typography{
+  color: var(--text-color);
+}
+
+.wrap-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 10px;
+  max-width: 500px;
+  min-width: 200px;
+  max-height: 500px;
+  min-height: 200px;
+  padding: 40px 20px;
+}
+
+.btn-modal {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px !important;
+}
+
+.wrap-modal-icon {
+  background-color: #E9E5FF;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.title-modal {
+  font-size: 18px;
+  color: var(--text-primary);
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-modal {
+  font-size: 14px;
+  color: var(--text-primary);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  opacity: .5;
+  text-align: center;
+}
+
+.wrap-loading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .wrap-modal {
+    max-width: 320px;
+    min-width: 200px;
+    max-height: 500px;
+    min-height: 200px;
+    padding: 30px 10px;
+  }
+  .btn-modal {
+    width: 100%;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+}
